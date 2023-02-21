@@ -260,5 +260,9 @@
     "dollar-variable-empty-line-before": 1,
     "empty-lines-before-comment": 1,
     "empty-lines-after-comment": 1
-  }
+  },
+  "liveSassCompile.settings.autoprefix": [
+
+  ]
 }
+
