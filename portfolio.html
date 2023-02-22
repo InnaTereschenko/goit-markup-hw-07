@@ -22,19 +22,30 @@
     <!-- Header -->
     <header class="page-header">
         <div class="container main-nav">
+
             <nav class="logo-nav">
                 <a class="link logo" href="./index.html"><span class="link logo-web">Web</span>Studio</a>
 
                 <ul class="site-nav list">
-                    <li class="item"><a class="link" href="./index.html">Studio</a></li>
-                    <li class="item"><a class="link current" href="./portfolio.html">Portfolio</a></li>
-                    <li class="item"><a class="link" href="/">Contacts</a></li>
+                    <li class="item"><a class="link link-nav current txt" href="./index.html">Studio</a></li>
+                    <li class="item"><a class="link txt" href="./portfolio.html">Portfolio</a></li>
+                    <li class="item"><a class="link txt" href="/">Contacts</a></li>
                 </ul>
             </nav>
             <ul class="auth-nav list">
                 <li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li class="item"><a class="link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
             </ul>
+
+
+
+            <button class="menu-toggle js-open-menu" aria-controls="mobile-menu" aria-expanded="false">
+                <svg width="32" height="22" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+
+                </svg></button>
         </div>
     </header>
     <main>
@@ -57,8 +68,25 @@
                     <li class="example-overlay"><a class="link example-link" href="/">
                             <div class="example-pic">
 
-                                <img class="img" src="./images/portfolio/potfolio1.jpg" alt="Bank App" width="360"
-                                    height="300">
+                                <picture>
+                                    <source type="image/webp" media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/imgdesk-1.webp 1x, ./images/portfolio/imgdesk@2x-1.webp 2x">
+                                    <source type="image/webp" media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/imgdesk@2x-1.jpg 2x">
+
+                                    <source type="image/webp" media="(min-width: 768px)"
+                                        srcset="./images/portfolio/imgtabl-1.webp 1x, ./images/portfolio/imgtabl@2x-1.webp 2x">
+                                    <source media="(min-width: 768px)" srcset="./images/portfolio/imgtabl@2x-1.jpg 2x">
+
+                                    <source type="image/webp" media="(min-width: 320px)"
+                                        srcset="./images/portfolio/imgmob-1.webp 1x, ./images/portfolio/imgmob@2x-1.webp 2x">
+                                    <source media="(min-width: 320px)" srcset="./images/portfolio/imgmob@2x-1.jpg 2x">
+
+
+
+                                    <img class="img" src="./images/portfolio/imgdesk-1.jpg" alt="Bank App" width="360"
+                                        height="300" loading="lazy">
+                                </picture>
 
                                 <p class="exm">14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
                                     Calorie Tracker
@@ -67,127 +95,279 @@
 
                             </div>
                             <div class="example-item">
-                                <h2 class="title">Banking App Interface Concept</h2>
+                                <h2 class="title title-mob">Banking App Interface Concept</h2>
                                 <p class="example-txt">App</p>
                             </div>
                         </a>
                     </li>
                     <li class="example-overlay"><a class="link example-link" href="/">
                             <div class="example-pic">
-                                <img class="img" src="./images/portfolio/potfolio2.jpg" alt="QR scan for pay"
-                                    width="360" height="300">
+
+                                <picture>
+                                    <source type="image/webp" media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/imgdesk-2.webp 1x, ./images/portfolio/imgdesk@2x-2.webp 2x">
+                                    <source media="(min-width: 1200px)" srcset="./images/portfolio/imgdesk@2x-2.jpg 2x">
+
+                                    <source type="image/webp" media="(min-width: 768px)"
+                                        srcset="./images/portfolio/imgtabl-2.webp 1x, ./images/portfolio/imgtabl@2x-2.webp 2x">
+                                    <source media="(min-width: 768px)" srcset="./images/portfolio/imgtabl@2x-2.jpg 2x">
+
+                                    <source type="image/webp" media="(min-width: 320px)"
+                                        srcset="./images/portfolio/imgmob-2.webp 1x, ./images/portfolio/imgmob@2x-2.webp 2x">
+
+
+                                    <img class="img" src="./images/portfolio/imgdesk-2.jpg" alt="QR scan for pay"
+                                        width="360" height="300" loading="lazy">
+                                </picture>
+
                                 <p class="exm">14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
                                     Calorie Tracker
                                     App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App</p>
                             </div>
                             <div class="example-item">
-                                <h2 class="title">Cashless Payment</h2>
+                                <h2 class="title title-mob">Cashless Payment</h2>
                                 <p class="example-txt">Marketing</p>
                             </div>
                         </a>
                     </li>
                     <li class="example-overlay"><a class="link example-link" href="/">
                             <div class="example-pic">
-                                <img class="img" src="./images/portfolio/potfolio3.jpg" alt="Notebook and phone"
-                                    width="360" height="300">
+
+                                <picture>
+                                    <source type="image/webp" media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/imgdesk-3.webp 1x, ./images/portfolio/imgdesk@2x-3.webp 2x">
+                                    <source media="(min-width: 1200px)" srcset="./images/portfolio/imgdesk@2x-3.jpg 2x">
+
+                                    <source type="image/webp" media="(min-width: 768px)"
+                                        srcset="./images/portfolio/imgtabl-3.webp 1x, ./images/portfolio/imgtabl@2x-3.webp 2x">
+                                    <source media="(min-width: 768px)" srcset="./images/portfolio/imgtabl@2x-3.jpg 2x">
+
+                                    <source type="image/webp" media="(min-width: 320px)"
+                                        srcset="./images/portfolio/imgmob-3.webp 1x, ./images/portfolio/imgmob@2x-3.webp 2x">
+                                    <source media="(min-width: 320px)" srcset="./images/portfolio/imgmob@2x-3.jpg 2x">
+
+                                    <img class="img" src="./images/portfolio/imgdesk-3.jpg" alt="Notebook and phone"
+                                        width="360" height="300" loading="lazy">
+                                </picture>
+
+
                                 <p class="exm">14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
                                     Calorie Tracker
                                     App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App</p>
                             </div>
                             <div class="example-item">
-                                <h2 class="title">Meditaion App</h2>
+                                <h2 class="title title-mob">Meditaion App</h2>
                                 <p class="example-txt">App</p>
                             </div>
                         </a>
                     </li>
                     <li class="example-overlay"><a class="link example-link" href="/">
                             <div class="example-pic">
-                                <img class="img" src="./images/portfolio/potfolio4.jpg" alt="Driving navigation"
-                                    width="360" height="300">
+
+
+                                <picture>
+                                    <source type="image/webp" media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/imgdesk-4.webp 1x, ./images/portfolio/imgdesk@2x-4.webp 2x">
+                                    <source media="(min-width: 1200px)" srcset="./images/portfolio/imgdesk@2x-4.jpg 2x">
+
+                                    <source type="image/webp" media="(min-width: 768px)"
+                                        srcset="./images/portfolio/imgtabl-4.webp 1x, ./images/portfolio/imgtabl@2x-4.webp 2x">
+                                    <source media="(min-width: 768px)" srcset="./images/portfolio/imgtabl@2x-4.jpg 2x">
+
+                                    <source type="image/webp" media="(min-width: 320px)"
+                                        srcset="./images/portfolio/imgmob-4.webp 1x, ./images/portfolio/imgmob@2x-4.webp 2x">
+                                    <source media="(min-width: 320px)" srcset="./images/portfolio/imgmob@2x-4.jpg 2x">
+
+                                    <img class="img" src="./images/portfolio/imgdesk-4.jpg" alt="Driving navigation"
+                                        width="360" height="300" loading="lazy">
+                                </picture>
+
+
                                 <p class="exm">14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
                                     Calorie Tracker
                                     App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App</p>
                             </div>
                             <div class="example-item">
-                                <h2 class="title">Taxi Service</h2>
+                                <h2 class="title title-mob">Taxi Service</h2>
                                 <p class="example-txt">Marketing</p>
                             </div>
                         </a>
                     </li>
                     <li class="example-overlay"><a class="link example-link" href="/">
                             <div class="example-pic">
-                                <img class="img" src="./images/portfolio/potfolio5.jpg" alt="Screenshot screen"
-                                    width="360" height="300">
+
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/imgdesk-5.webp 1x, ./images/portfolio/imgdesk@2x-5.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)" srcset="./images/portfolio/imgdesk@2x-5.jpg 2x">
+
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/imgtabl-5.webp 1x, ./images/portfolio/imgtabl@2x-5.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)" srcset="./images/portfolio/imgmob@2x-5.jpg 2x">
+
+                                    <source media="(min-width: 320px)"
+                                        srcset="./images/portfolio/imgmob-5.webp 1x, ./images/portfolio/imgmobl@2x-5.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 320px)" srcset="./images/portfolio/imgmob@2x-5.jpg 2x">
+
+                                    <img class="img" src="./images/portfolio/imgdesk-5.jpg" alt="Screenshot screen"
+                                        width="360" height="300" loading="lazy">
+                                </picture>
+
+
                                 <p class="exm">14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
                                     Calorie Tracker
                                     App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App</p>
                             </div>
                             <div class="example-item">
-                                <h2 class="title">Screen Illustrations</h2>
+                                <h2 class="title title-mob">Screen Illustrations</h2>
                                 <p class="example-txt">Design</p>
                             </div>
                         </a>
                     </li>
                     <li class="example-overlay"><a class="link example-link" href="/">
                             <div class="example-pic">
-                                <img class="img" src="./images/portfolio/potfolio6.jpg" alt="Girl with phone"
-                                    width="360" height="300">
+
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/imgdesk-6.webp 1x, ./images/portfolio/imgdesk@2x-6.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)" srcset="./images/portfolio/imgdesk@2x-6.jpg 2x">
+
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/imgtabl-6.webp 1x, ./images/portfolio/imgtabl@2x-6.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)" srcset="./images/portfolio/imgtabl@2x-6.jpg 2x">
+
+                                    <source media="(min-width: 320px)"
+                                        srcset="./images/portfolio/imgmob-6.webp 1x, ./images/portfolio/imgmob@2x-6.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 320px)" srcset="./images/portfolio/imgmob@2x-6.jpg 2x">
+
+
+                                    <img class="img" src="./images/portfolio/imgdesk-6.jpg" alt="Girl with phone"
+                                        width="360" height="300" loading="lazy">
+                                </picture>
+
+
                                 <p class="exm">14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
                                     Calorie Tracker
                                     App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App</p>
                             </div>
                             <div class="example-item">
-                                <h2 class="title">Online Courses</h2>
+                                <h2 class="title title-mob">Online Courses</h2>
                                 <p class="example-txt">Marketing</p>
                             </div>
                         </a>
                     </li>
                     <li class="example-overlay"><a class="link example-link" href="/">
                             <div class="example-pic">
-                                <img class="img" src="./images/portfolio/potfolio7.jpg" alt="Photo instagram stories"
-                                    width="360" height="300">
+                                <picture>
+
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/imgdesk-7.webp 1x, ./images/portfolio/imgdesk@2x-7.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)" srcset="./images/portfolio/imgdesk@2x-7.jpg 2x">
+
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/imgtabl-7.webp 1x, ./images/portfolio/imgtabl@2x-7.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)" srcset="./images/portfolio/imgtabl@2x-7.jpg 2x">
+
+                                    <source media="(min-width: 320px)"
+                                        srcset="./images/portfolio/imgmob-7.webp 1x, ./images/portfolio/imgmob@2x-7.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 320px)" srcset="./images/portfolio/imgmob@2x-7.jpg 2x">
+
+
+                                    <img class="img" src="./images/portfolio/imgdesk-7.jpg"
+                                        alt="Photo instagram stories" width="360" height="300" loading="lazy">
+                                </picture>
+
+
                                 <p class="exm">14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
                                     Calorie Tracker
                                     App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App</p>
                             </div>
                             <div class="example-item">
-                                <h2 class="title">Instagram Stories Concept</h2>
+                                <h2 class="title title-mob">Instagram Stories Concept</h2>
                                 <p class="example-txt">Design</p>
                             </div>
                         </a>
                     </li>
                     <li class="example-overlay"><a class="link example-link" href="/">
                             <div class="example-pic">
-                                <img class="img" src="./images/portfolio/potfolio8.jpg"
-                                    alt="Organic vegetables and fruits" width="360" height="300">
+                                <picture>
+
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/imgdesk-8.webp 1x, ./images/portfolio/imgdesk@2x-8.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)" srcset="./images/portfolio/imgdesk@2x-8.jpg 2x">
+
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/imgtabl-8.webp 1x, ./images/portfolio/imgtabl@2x-8.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)" srcset="./images/portfolio/imgtabl@2x-8.jpg 2x">
+
+                                    <source media="(min-width: 320px)"
+                                        srcset="./images/portfolio/imgmob-8.webp 1x, ./images/portfolio/imgmob@2x-8.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 320px)" srcset="./images/portfolio/imgmob@2x-8.jpg 2x">
+                                    <img class="img" src="./images/portfolio/imgdesk-8.jpg"
+                                        alt="Organic vegetables and fruits" width="360" height="300" loading="lazy">
+                                </picture>
+
+
                                 <p class="exm">14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
                                     Calorie Tracker
                                     App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App</p>
                             </div>
                             <div class="example-item">
-                                <h2 class="title">Organic Food</h2>
+                                <h2 class="title title-mob">Organic Food</h2>
                                 <p class="example-txt">Web Site</p>
                             </div>
                         </a>
                     </li>
                     <li class="example-overlay"><a class="link example-link" href="/">
                             <div class="example-pic">
-                                <img class="img" src="./images/portfolio/potfolio9.jpg" alt="Coffee is poured"
-                                    width="360" height="300">
+
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/imgdesk-9.webp 1x, ./images/portfolio/imgdesk@2x-9.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 1200px)" srcset="./images/portfolio/imgdesk@2x-9.jpg 2x">
+
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/imgtabl-9.webp 1x, ./images/portfolio/imgtabl@2x-9.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 768px)" srcset="./images/portfolio/imgtabl@2x-9.jpg 2x">
+
+                                    <source media="(min-width: 320px)"
+                                        srcset="./images/portfolio/imgmob-9.webp 1x, ./images/portfolio/imgmob@2x-9.webp 2x"
+                                        type="image/webp">
+                                    <source media="(min-width: 320px)" srcset="./images/portfolio/imgtabl@2x-9.jpg 2x">
+
+                                    <img class="img" src="./images/portfolio/imgdesk-9.jpg" alt="Coffee is poured"
+                                        width="360" height="300" loading="lazy">
+                                </picture>
+
+
                                 <p class="exm">14 Stylish and User-Friendly App Design Concepts · Task Manager App ·
                                     Calorie Tracker
                                     App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App</p>
                             </div>
                             <div class="example-item">
-                                <h2 class="title">Fresh Coffee</h2>
+                                <h2 class="title title-mob">Fresh Coffee</h2>
                                 <p class="example-txt">Web Site</p>
                             </div>
                         </a>
@@ -201,34 +381,36 @@
     <footer class="footer">
         <div class="container footer-box">
 
-            <div class="footer-about">
-                <a class="link logo-footer" href="./index.html"><span class="link logo-web">Web</span>Studio</a>
-                <p class="footer-txt">Increase the flow of customers and sales for your business with digital marketing
-                    & growth solutions.</p>
-            </div>
-            <div class="footer-contacts">
-                <p>Social media</p>
-
-                <ul class="list footer-social">
-                    <li><a class="footer-link" href="/"><svg class="footer-icon" width="24" height="24">
-                                <use href=".//images/icons.svg#icon-instagram" aria-label="Instagram"></use>
-
-                            </svg></a></li>
-                    <li><a class="footer-link" href="/"><svg width="24" height="24">
-                                <use href=".//images/icons.svg#icon-twitter" aria-label="Twitter"></use>
-
-                            </svg>
-                        </a></li>
-                    <li><a class="footer-link" href="/"><svg width="24" height="24">
-                                <use href=".//images/icons.svg#icon-facebook" aria-label="Facebook"></use>
-
-                            </svg></a></li>
-                    <li><a class="footer-link" href="/"><svg width="24" height="24">
-                                <use href=".//images/icons.svg#icon-linkedin" aria-label="Linkedin"></use>
-
-                            </svg></a></li>
-
-                </ul>
+            <div class="footer-tablet">
+                <div class="footer-about">
+                    <a class="link logo-footer" href="./index.html"><span class="link logo-web">Web</span>Studio</a>
+                    <p class="footer-txt">Increase the flow of customers and sales for your business with digital
+                        marketing
+                        &
+                        growth solutions.</p>
+                </div>
+                <div class="footer-contacts">
+                    <p class="txt">Social media</p>
+                    <ul class="list footer-social">
+                        <li><a class="footer-link" href="/" target="_blank" rel="noreferrer noopener"><svg
+                                    class="footer-icon" width="24" height="24">
+                                    <use href=".//images/icons.svg#icon-instagram" aria-label="Instagram"></use>
+                                </svg></a></li>
+                        <li><a class="footer-link" href="/" target="_blank" rel="noreferrer noopener"><svg width="24"
+                                    height="24">
+                                    <use href=".//images/icons.svg#icon-twitter" aria-label="Twitter"></use>
+                                </svg>
+                            </a></li>
+                        <li><a class="footer-link" href="/" target="_blank" rel="noreferrer noopener"><svg width="24"
+                                    height="24">
+                                    <use href=".//images/icons.svg#icon-facebook" aria-label="Facebook"></use>
+                                </svg></a></li>
+                        <li><a class="footer-link" href="/" target="_blank" rel="noreferrer noopener"><svg width="24"
+                                    height="24">
+                                    <use href=".//images/icons.svg#icon-linkedin" aria-label="Linkedin"></use>
+                                </svg></a></li>
+                    </ul>
+                </div>
             </div>
             <div class="footer-form">
                 <form class="footer-subscribe">
@@ -245,9 +427,62 @@
                     </button>
                 </form>
             </div>
+
         </div>
 
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="btn-close-mob js-close-menu">
+
+            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <path fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+
+        <ul class="mobile-menu">
+            <li><a class="link" href="/">Studio</a></li>
+            <li><a class="link" href="/">Portfolio</a></li>
+            <li><a class="link" href="/">Contacts</a></li>
+        </ul>
+        <ul class="mobile-contacts list">
+            <li><a class="link item-contact-mob" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
+            <li><a class="link item-contact-mob" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+
+        </ul>
+        <ul class="list mobile-social">
+            <li><a class="social-link" href="/" target="_blank"><svg width="24" height="24">
+                        <use class="social-icon" href=".//images/icons.svg#icon-instagram" aria-label="Instagram"></use>
+
+                    </svg></a></li>
+            <li><a class="social-link" href="/" rel="noreferrer noopener"><svg width="24" height="24">
+                        <use href=".//images/icons.svg#icon-twitter" aria-label="Twitter"></use>
+
+                    </svg>
+                </a></li>
+            <li><a class="social-link" href="/" target="_blank" rel="noreferrer noopener"><svg width="24" height="24">
+                        <use href=".//images/icons.svg#icon-facebook" aria-label="Facebook"></use>
+
+                    </svg></a></li>
+            <li><a class="social-link" href="/" target="_blank" rel="noreferrer noopener"><svg width="24" height="24">
+                        <use href=".//images/icons.svg#icon-linkedin" aria-label="Linkedin"></use>
+
+                    </svg></a></li>
+
+        </ul>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" defer
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/mobil-menu.js" defer></script>
+
+
+
 </body>
 
 </html>
